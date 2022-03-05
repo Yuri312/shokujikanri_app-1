@@ -3,11 +3,29 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-import HeaderComponent from "./components/HeaderComponent";
 
 require('./bootstrap');
 
+import VueRouter from 'vue-router';
+import HeaderComponent from "./components/HeaderComponent";
+import LoginComponent from "./components/LoginComponent";
+
+
+
 window.Vue = require('vue');
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        {
+            path: '/login',
+            name: 'login',
+            component: LoginComponent
+        },
+    ]
+});
 
 /**
  * The following block of code may be used to automatically register your
@@ -22,6 +40,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('header-component', HeaderComponent);
+Vue.component('login-component', LoginComponent);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,4 +50,5 @@ Vue.component('header-component', HeaderComponent);
 
 const app = new Vue({
     el: '#app',
+    router: router,
 });
