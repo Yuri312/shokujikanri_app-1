@@ -9,7 +9,11 @@ require('./bootstrap');
 import VueRouter from 'vue-router';
 import HeaderComponent from "./components/HeaderComponent";
 import LoginComponent from "./components/LoginComponent";
-
+import UserRegistrationComponent from "./components/UserRegistrationComponent";
+import UserCompleteComponent from "./components/UserCompleteComponent";
+import UserIndexComponent from "./components/UserIndexComponent";
+import RecordEditComponent from "./components/RecordEditComponent";
+import RecordUploadComponent from "./components/RecordUploadComponent";
 
 
 window.Vue = require('vue');
@@ -23,6 +27,31 @@ const router = new VueRouter({
             path: '/login',
             name: 'login',
             component: LoginComponent
+        },
+        {
+            path: '/registration',
+            name: 'registration',
+            component: UserRegistrationComponent
+        },
+        {
+            path: '/complete',
+            name: 'complete',
+            component: UserCompleteComponent
+        },
+        {
+            path: '/index',
+            name: 'index',
+            component: UserIndexComponent
+        },
+        {
+            path: '/edit',
+            name: 'edit',
+            component: RecordEditComponent
+        },
+        {
+            path: '/upload',
+            name: 'upload',
+            component: RecordUploadComponent
         },
     ]
 });
@@ -41,6 +70,7 @@ const router = new VueRouter({
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('header-component', HeaderComponent);
 Vue.component('login-component', LoginComponent);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
