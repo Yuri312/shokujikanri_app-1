@@ -26,7 +26,9 @@
     </p>
     <p>補足事項があれば入力してください(任意)
       <textarea name="option" rows="3"></textarea></p>
-      <input type="button" name="submit" id="post" value="登録する">
+      <router-link v-bind:to="{name: 'index'}">
+        <input type="button" name="submit" id="post" value="登録する">
+      </router-link>
   </form>
   </div>
 </template>

@@ -2085,6 +2085,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2135,6 +2137,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2148,6 +2152,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -37872,39 +37878,64 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "login" },
+    [
+      _c("header", [_vm._v("食事記録")]),
+      _vm._v(" "),
+      _c("h1", [_vm._v("ログイン")]),
+      _vm._v(" "),
+      _c("router-link", { attrs: { to: { name: "registration" } } }, [
+        _vm._v("初回登録はこちら"),
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _vm._m(3),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "login" }, [
-      _c("header", [_vm._v("食事記録")]),
-      _vm._v(" "),
-      _c("h1", [_vm._v("ログイン")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "" } }, [_vm._v("初回登録はこちら")]),
-      _vm._v(" "),
-      _c("div", [
-        _c("input", {
-          attrs: { type: "text", name: "email", placeholder: "メールアドレス" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("input", {
-          attrs: { type: "text", name: "password", placeholder: "パスワード" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("div", [
-        _c("input", { attrs: { type: "checkbox", name: "keep_login" } }),
-        _c("label", [_vm._v("ログイン状態を保持する")]),
-      ]),
-      _vm._v(" "),
-      _c("div", [_c("button", [_vm._v("ログイン")])]),
+    return _c("div", [
+      _c("input", {
+        attrs: { type: "text", name: "email", placeholder: "メールアドレス" },
+      }),
     ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("input", {
+        attrs: { type: "text", name: "password", placeholder: "パスワード" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("input", { attrs: { type: "checkbox", name: "keep_login" } }),
+      _c("label", [_vm._v("ログイン状態を保持する")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("button", [_vm._v("ログイン")])])
   },
 ]
 render._withStripped = true
@@ -38032,15 +38063,11 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "upload" }, [
-      _c("form", { attrs: { action: "#", method: "post" } }, [
+  return _c("div", { staticClass: "upload" }, [
+    _c(
+      "form",
+      { attrs: { action: "#", method: "post" } },
+      [
         _c("input", {
           attrs: {
             type: "file",
@@ -38049,62 +38076,95 @@ var staticRenderFns = [
           },
         }),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("食事区分(必須)\n    "),
-          _c("select", { attrs: { name: "meal_time" } }, [
-            _c("option", { attrs: { hidden: "" } }, [
-              _vm._v("選択してください"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
-          ]),
-        ]),
+        _vm._m(0),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("場所(必須)\n    "),
-          _c("input", { attrs: { type: "text", name: "place" } }),
-        ]),
+        _vm._m(1),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("日時(必須）\n    "),
-          _c("input", { attrs: { type: "date", name: "date" } }),
-          _vm._v("≈\n    "),
-          _c("input", { attrs: { type: "time", name: "time" } }),
-        ]),
+        _vm._m(2),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("食事内容を入力してください(必須)\n    "),
-          _c("input", { attrs: { type: "text", name: "meal" } }),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text", name: "ingredient" } }),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text", name: "amount" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "#", name: "help" } }, [_vm._v("ヘルプ")]),
-        ]),
+        _vm._m(3),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("補足事項があれば入力してください(任意)\n    "),
-          _c("textarea", { attrs: { name: "option", rows: "3" } }),
-        ]),
+        _vm._m(4),
         _vm._v(" "),
-        _c("input", {
-          attrs: {
-            type: "button",
-            name: "submit",
-            id: "post",
-            value: "登録する",
-          },
-        }),
+        _c("router-link", { attrs: { to: { name: "index" } } }, [
+          _c("input", {
+            attrs: {
+              type: "button",
+              name: "submit",
+              id: "post",
+              value: "登録する",
+            },
+          }),
+        ]),
+      ],
+      1
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("食事区分(必須)\n    "),
+      _c("select", { attrs: { name: "meal_time" } }, [
+        _c("option", { attrs: { hidden: "" } }, [_vm._v("選択してください")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
+        _vm._v(" "),
+        _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("場所(必須)\n    "),
+      _c("input", { attrs: { type: "text", name: "place" } }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("日時(必須）\n    "),
+      _c("input", { attrs: { type: "date", name: "date" } }),
+      _vm._v("≈\n    "),
+      _c("input", { attrs: { type: "time", name: "time" } }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("食事内容を入力してください(必須)\n    "),
+      _c("input", { attrs: { type: "text", name: "meal" } }),
+      _vm._v(" "),
+      _c("input", { attrs: { type: "text", name: "ingredient" } }),
+      _vm._v(" "),
+      _c("input", { attrs: { type: "text", name: "amount" } }),
+      _vm._v(" "),
+      _c("a", { attrs: { href: "#", name: "help" } }, [_vm._v("ヘルプ")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("補足事項があれば入力してください(任意)\n    "),
+      _c("textarea", { attrs: { name: "option", rows: "3" } }),
     ])
   },
 ]
@@ -38129,28 +38189,27 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "complete" }, [
-      _c("header", [_vm._v("食事記録")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("登録が完了しました。")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("自動的にホーム画面に戻ります。")]),
-      _vm._v(" "),
-      _c("p", [
+  return _c("div", { staticClass: "complete" }, [
+    _c("header", [_vm._v("食事記録")]),
+    _vm._v(" "),
+    _c("p", [_vm._v("登録が完了しました。")]),
+    _vm._v(" "),
+    _c("p", [_vm._v("自動的にホーム画面に戻ります。")]),
+    _vm._v(" "),
+    _c(
+      "p",
+      [
         _vm._v("（画面が変わらない場合、"),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("こちらをクリック")]),
+        _c("router-link", { attrs: { to: { name: "index" } } }, [
+          _vm._v("こちらをクリック"),
+        ]),
         _vm._v("）"),
-      ]),
-    ])
-  },
-]
+      ],
+      1
+    ),
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -38172,30 +38231,37 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "index" }, [
+    _c("header", [_vm._v("食事記録")]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "form",
+      { attrs: { action: "#", method: "post" } },
+      [
+        _c("router-link", { attrs: { to: { name: "upload" } } }, [
+          _c("input", {
+            attrs: {
+              type: "button",
+              name: "post",
+              id: "post",
+              value: "回答を追加する",
+            },
+          }),
+        ]),
+      ],
+      1
+    ),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "index" }, [
-      _c("header", [_vm._v("食事記録")]),
-      _vm._v(" "),
-      _c("h1", [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("調査に関する注意")]),
-      ]),
-      _vm._v(" "),
-      _c("form", { attrs: { action: "#", method: "post" } }, [
-        _c("input", {
-          attrs: {
-            type: "button",
-            name: "post",
-            id: "post",
-            value: "回答を追加する",
-          },
-        }),
-      ]),
+    return _c("h1", [
+      _c("a", { attrs: { href: "#" } }, [_vm._v("調査に関する注意")]),
     ])
   },
 ]
@@ -38220,120 +38286,42 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "registration" }, [
-      _c("header", [_vm._v("食事記録")]),
-      _vm._v(" "),
-      _c("form", { attrs: { action: "#", method: "post" } }, [
+  return _c("div", { staticClass: "registration" }, [
+    _c("header", [_vm._v("食事記録")]),
+    _vm._v(" "),
+    _c(
+      "form",
+      { attrs: { action: "#", method: "post" } },
+      [
         _c("h1", [_vm._v("本日時点のあなたの情報を入力してください")]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("お名前(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_login", required: "" },
-          }),
-        ]),
+        _vm._m(0),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("性別(必須)\n    "),
-          _c("input", {
-            attrs: {
-              id: "man",
-              type: "radio",
-              name: "user_gender",
-              value: "男",
-            },
-          }),
-          _c("label", { attrs: { for: "男" } }, [_vm._v("男")]),
-          _vm._v(" "),
-          _c("input", {
-            attrs: {
-              id: "women",
-              type: "radio",
-              name: "user_gender",
-              value: "女",
-            },
-          }),
-          _c("label", { attrs: { for: "女" } }, [_vm._v("女")]),
-        ]),
+        _vm._m(1),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("身長(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_height", required: "" },
-          }),
-        ]),
+        _vm._m(2),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("体重(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_weight", required: "" },
-          }),
-        ]),
+        _vm._m(3),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("体脂肪率(任意)\n    "),
-          _c("input", { attrs: { type: "text", name: "user_fat_perce" } }),
-        ]),
+        _vm._m(4),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("競技名(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_competiton", required: "" },
-          }),
-        ]),
+        _vm._m(5),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("ポジション(任意)\n    "),
-          _c("input", { attrs: { type: "text", name: "user_potiton" } }),
-        ]),
+        _vm._m(6),
         _vm._v(" "),
         _c("h1", [_vm._v("メールアドレスとパスワードを設定してください")]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("メールアドレス(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_email", required: "" },
-          }),
-        ]),
+        _vm._m(7),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("メールアドレス確認用(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_email_confirm", required: "" },
-          }),
-        ]),
+        _vm._m(8),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("パスワード(必須)\n    "),
-          _c("input", {
-            attrs: { type: "text", name: "user_pass", required: "" },
-          }),
-        ]),
+        _vm._m(9),
         _vm._v(" "),
-        _c("p", [
-          _vm._v("パスワード確認用(必須)\n      "),
-          _c("input", {
-            attrs: { type: "text", name: "user_pass_confirm", required: "" },
-          }),
-        ]),
+        _vm._m(10),
         _vm._v(" "),
         _c("h1", [_vm._v("調査番号を入力してください")]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "説明時に共有された、6桁の番号を入力してください。(必須)\n      "
-          ),
-          _c("input", {
-            attrs: { type: "text", name: "research_id", required: "" },
-          }),
-        ]),
+        _vm._m(11),
         _vm._v(" "),
         _c("input", {
           attrs: {
@@ -38352,15 +38340,152 @@ var staticRenderFns = [
           },
         }),
         _vm._v(" "),
-        _c("input", {
-          attrs: {
-            type: "submit",
-            name: "um-button",
-            id: "um-submit-btn",
-            value: "登録する",
-          },
-        }),
-      ]),
+        _c("router-link", { attrs: { to: { name: "complete" } } }, [
+          _c("input", {
+            attrs: {
+              type: "submit",
+              name: "um-button",
+              id: "um-submit-btn",
+              value: "登録する",
+            },
+          }),
+        ]),
+      ],
+      1
+    ),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("お名前(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_login", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("性別(必須)\n    "),
+      _c("input", {
+        attrs: { id: "man", type: "radio", name: "user_gender", value: "男" },
+      }),
+      _c("label", { attrs: { for: "男" } }, [_vm._v("男")]),
+      _vm._v(" "),
+      _c("input", {
+        attrs: { id: "women", type: "radio", name: "user_gender", value: "女" },
+      }),
+      _c("label", { attrs: { for: "女" } }, [_vm._v("女")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("身長(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_height", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("体重(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_weight", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("体脂肪率(任意)\n    "),
+      _c("input", { attrs: { type: "text", name: "user_fat_perce" } }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("競技名(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_competiton", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("ポジション(任意)\n    "),
+      _c("input", { attrs: { type: "text", name: "user_potiton" } }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("メールアドレス(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_email", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("メールアドレス確認用(必須)\n    "),
+      _c("input", {
+        attrs: { type: "text", name: "user_email_confirm", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("パスワード(必須)\n    "),
+      _c("input", { attrs: { type: "text", name: "user_pass", required: "" } }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("パスワード確認用(必須)\n      "),
+      _c("input", {
+        attrs: { type: "text", name: "user_pass_confirm", required: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("説明時に共有された、6桁の番号を入力してください。(必須)\n      "),
+      _c("input", {
+        attrs: { type: "text", name: "research_id", required: "" },
+      }),
     ])
   },
 ]

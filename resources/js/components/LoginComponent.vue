@@ -2,7 +2,7 @@
   <div class="login">
   <header>食事記録</header>
   <h1>ログイン</h1>
-  <a href="">初回登録はこちら</a>
+  <router-link v-bind:to="{name: 'registration'}">初回登録はこちら</router-link>
   <div>
     <input type="text" name="email" placeholder="メールアドレス">
   </div>

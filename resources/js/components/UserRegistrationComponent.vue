@@ -36,7 +36,9 @@
         <input type="text" name="research_id" required=""></p>
         <input type="hidden" id="_wpnonce" name="_wpnonce" value="5a2fcb9d60">
         <input type="hidden" name="_wp_http_referer" value="/user_registration/">
-        <input type="submit" name="um-button" id="um-submit-btn" value="登録する">
+        <router-link v-bind:to="{name: 'complete'}">
+          <input type="submit" name="um-button" id="um-submit-btn" value="登録する">
+        </router-link>
   </form>
   </div>
 </template>
