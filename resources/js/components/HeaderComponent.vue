@@ -1,12 +1,11 @@
 <template>
-    <div class="container-fluid bg-dark mb-3">
+    <div class="container-fluid bg-white mb-3">
         <div class="container">
-            <nav class="navbar navbar-dark">
-                <span class="navbar-brand mb-0 h1">Vue Laravel SPA</span>
-                <div>
-                    <button class="btn btn-success">List</button>
-                    <button class="btn btn-success">ADD</button>
-                </div>
+            <nav class="navbar navbar-light">
+                <span class="navbar-brand mb-0 h1">食事記録</span>
+                <!-- <div>
+                    <button class="btn btn-success">ログアウト</button>
+                </div> -->
             </nav>
         </div>
     </div>
