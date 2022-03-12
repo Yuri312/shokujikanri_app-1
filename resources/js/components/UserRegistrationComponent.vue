@@ -129,7 +129,7 @@
       </div>
       
       <router-link v-bind:to="{name: 'complete'}">
-        <input type="submit" class="mt-5 btn btn-secondary col-sm-3" value="登録する">
+        <input type="submit" class="mt-5 btn btn-secondary" style="width:50px" value="登録する">
       </router-link>
     </form>
   </div>
@@ -141,7 +141,5 @@ export default {
 </script>
 
 <style>
-.w50{
-  width: 50%;
-}
+
 </style>
