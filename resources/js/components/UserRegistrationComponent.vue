@@ -1,45 +1,137 @@
 <template>
-  <div class="registration">
-  
-  <header>食事記録</header>
-  
-  <form action="#" method="post">
-    <h1>本日時点のあなたの情報を入力してください</h1>
-    <p>お名前(必須)
-      <input type="text" name="user_login" required=""></p>
-    <p>性別(必須)
-      <input id="man" type="radio" name="user_gender" value="男"><label for="男">男</label>
-      <input id="women" type="radio" name="user_gender" value="女"><label for="女">女</label></p>
-    <p>身長(必須)
-      <input type="text" name="user_height" required=""></p>
-    <p>体重(必須)
-      <input type="text" name="user_weight" required=""></p>
-    <p>体脂肪率(任意)
-      <input type="text" name="user_fat_perce"></p>
-    <p>競技名(必須)
-      <input type="text" name="user_competiton" required=""></p>
-    <p>ポジション(任意)
-      <input type="text" name="user_potiton"></p>
+  <div class="container">
+    <form class="form-horizontal">
 
-    <h1>メールアドレスとパスワードを設定してください</h1>
-    <p>メールアドレス(必須)
-      <input type="text" name="user_email" required=""></p>
-    <p>メールアドレス確認用(必須)
-      <input type="text" name="user_email_confirm" required=""></p>
-    <p>パスワード(必須)
-      <input type="text" name="user_pass" required=""></p>
-    <p>パスワード確認用(必須)
-        <input type="text" name="user_pass_confirm" required=""></p>
+      <div class="p-3 my-3" style="background-color:#f5f5f5">
+        本日時点のあなたの情報を入力してください
+      </div>
 
-    <h1>調査番号を入力してください</h1>
-    <p>説明時に共有された、6桁の番号を入力してください。(必須)
-        <input type="text" name="research_id" required=""></p>
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        お名前（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_login" required="">
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+          性別（必須）
+        </label>
+          <div class="row radio-inline mx-2">
+            <input id="man" type="radio" name="user_gender" value="男性">&nbsp;<label for="男性">男性</label>
+          </div>
+          <div class="row radio-inline mx-2">
+            <input id="women" type="radio" name="user_gender" value="女性">&nbsp;<label for="女性">女性</label>
+          </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        身長（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_height" size="10" required="">&nbsp;cm
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        体重（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_weight" size="10" required="">&nbsp;kg
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        体脂肪率（任意）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_fat_perce" size="10" required="">&nbsp;%
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        競技名（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_competition" required="">
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        ポジション（任意）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_position" required="">
+        </div>
+      </div>
+
+      <div class="p-3 my-3" style="background-color:#f5f5f5">
+        メールアドレスとパスワードを設定してください
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        メールアドレス（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_email" required="">
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        メールアドレス確認用（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_email_confirm" required="">
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        パスワード（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_pass" required="">
+        </div>
+      </div>
+
+      <div class="form-group form-inline">
+        <label class="col-sm-3 control-label">
+        パスワード確認用（必須）
+        </label>
+        <div class="col-sm-7">
+        <input class="form-control" type="text" name="user_pass_confirm" required="">
+        </div>
+      </div>
+
+      <div class="p-3 my-3" style="background-color:#f5f5f5">
+        調査番号を入力してください
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label">
+        説明時に共有された、6桁の番号を入力してください。(必須)
+        </label>
+        <input class="col-sm-2 form-control" type="text" name="research_id" required="">
+      </div>
+      
+      <div>
         <input type="hidden" id="_wpnonce" name="_wpnonce" value="5a2fcb9d60">
         <input type="hidden" name="_wp_http_referer" value="/user_registration/">
-        <router-link v-bind:to="{name: 'complete'}">
-          <input type="submit" name="um-button" id="um-submit-btn" value="登録する">
-        </router-link>
-  </form>
+      </div>
+      
+      <router-link v-bind:to="{name: 'complete'}">
+        <input type="submit" class="mt-5 btn btn-secondary col-sm-3" value="登録する">
+      </router-link>
+    </form>
   </div>
 </template>
 <script>
@@ -47,3 +139,9 @@ export default {
   
 }
 </script>
+
+<style>
+.w50{
+  width: 50%;
+}
+</style>
