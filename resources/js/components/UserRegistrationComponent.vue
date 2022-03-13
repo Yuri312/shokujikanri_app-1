@@ -16,14 +16,14 @@
       </div>
 
       <div class="form-group form-inline">
-        <label class="col-sm-3 control-label">
+        <label class="col-sm-3 form-check-label">
           性別（必須）
         </label>
           <div class="row radio-inline mx-2">
-            <input id="man" type="radio" name="user_gender" value="男性">&nbsp;<label for="男性">男性</label>
+            <input class="form-check-input" id="man" type="radio" name="user_gender" value="男性">&nbsp;<label for="男性">男性</label>
           </div>
           <div class="row radio-inline mx-2">
-            <input id="women" type="radio" name="user_gender" value="女性">&nbsp;<label for="女性">女性</label>
+            <input class="form-check-input" id="women" type="radio" name="user_gender" value="女性">&nbsp;<label for="女性">女性</label>
           </div>
       </div>
 
@@ -129,7 +129,7 @@
       </div>
       
       <router-link v-bind:to="{name: 'complete'}">
-        <input type="submit" class="mt-5 btn btn-secondary" style="width:50px" value="登録する">
+        <input type="button" class="mt-5 btn btn-secondary" style="width:150px" value="登録する">
       </router-link>
     </form>
   </div>

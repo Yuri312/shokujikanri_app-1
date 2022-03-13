@@ -2049,6 +2049,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2096,7 +2137,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      uploadImg: upload.img,
+      forms: []
+    };
+  },
+  methods: {
+    addForm: function addForm() {
+      this.forms.push('');
+    },
+    deleteForm: function deleteForm(index) {
+      this.forms.splice(index, 1);
+    }
+  }
+});
 
 /***/ }),
 
@@ -6678,6 +6778,44 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\nbody{\n  background-color: #e5e5e5;\n}\n.login-block{\n  width: 300px;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.batsu{\n    font-size: 300%;\n    font-weight: bold;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#filesend {\n   display: none;  /* 本来のファイル選択フォームは非表示に */\n}\n.batsu{\n    font-size: 300%;\n    font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -37949,6 +38087,66 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordEditComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordUploadComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UserCompleteComponent.vue?vue&type=style&index=0&lang=css&":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UserCompleteComponent.vue?vue&type=style&index=0&lang=css& ***!
@@ -38770,86 +38968,255 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("form", [
+      _c("div", { staticStyle: { "background-color": "#f5f5f5" } }, [
+        _vm._v("\n    画像一覧が表示される予定\n  "),
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("div", [
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", { staticClass: "form-row" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _vm._m(6),
+          _vm._v(" "),
+          _vm._m(7),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "batsu",
+              on: {
+                click: function ($event) {
+                  return _vm.deleteForm(_vm.index)
+                },
+              },
+            },
+            [_vm._v("\n          ×\n        ")]
+          ),
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: " btn btn-secondary",
+            staticStyle: { width: "450px" },
+            on: {
+              click: function ($event) {
+                return _vm.addForm()
+              },
+            },
+          },
+          [_vm._v("入力欄を追加")]
+        ),
+      ]),
+      _vm._v(" "),
+      _vm._m(8),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row mt-5" },
+        [
+          _c("router-link", { attrs: { to: { name: "index" } } }, [
+            _c("input", {
+              staticClass: "btn btn-light border",
+              staticStyle: { width: "200px" },
+              attrs: { type: "button", name: "delete", value: "削除する" },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("router-link", { attrs: { to: { name: "index" } } }, [
+            _c("input", {
+              staticClass: "btn btn-secondary",
+              staticStyle: { width: "200px" },
+              attrs: {
+                type: "button",
+                name: "update",
+                id: "post",
+                value: "登録する",
+              },
+            }),
+          ]),
+        ],
+        1
+      ),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "complete" }, [
-      _c("header", [_vm._v("食事記録")]),
-      _vm._v(" "),
-      _c("form", { attrs: { action: "#", method: "post" } }, [
-        _c("p", [_vm._v("※画像一覧が表示される予定※")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("食事区分(必須)\n    "),
-          _c("select", { attrs: { name: "meal_time" } }, [
-            _c("option", { attrs: { hidden: "" } }, [
-              _vm._v("選択してください"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("場所(必須)\n    "),
-          _c("input", { attrs: { type: "text", name: "place" } }),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("日時(必須）\n    "),
-          _c("input", { attrs: { type: "date", name: "date" } }),
-          _vm._v("≈\n    "),
-          _c("input", { attrs: { type: "time", name: "time" } }),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("食事内容を入力してください(必須)\n    "),
-          _c("input", { attrs: { type: "text", name: "meal" } }),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text", name: "ingredient" } }),
-          _vm._v(" "),
-          _c("input", { attrs: { type: "text", name: "amount" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "#", name: "help" } }, [_vm._v("ヘルプ")]),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("補足事項があれば入力してください(任意)\n    "),
-          _c("textarea", { attrs: { name: "option", rows: "3" } }),
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c("input", {
-            attrs: {
-              type: "button",
-              name: "delete",
-              id: "delete",
-              value: "削除する",
-            },
-          }),
-          _vm._v(" "),
-          _c("input", {
-            attrs: {
-              type: "button",
-              name: "update",
-              id: "update",
-              value: "登録する",
-            },
-          }),
-        ]),
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n      食事区分（必須）\n      "),
       ]),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
+          staticClass: "form-control",
+          staticStyle: { width: "200px" },
+          attrs: { name: "meal_time" },
+        },
+        [
+          _c("option", { attrs: { hidden: "" } }, [_vm._v("選択してください")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n      場所（必須）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "200px" },
+        attrs: { type: "text", name: "place" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n        日時(必須）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row" }, [
+        _c("input", {
+          staticClass: "form-control",
+          staticStyle: { width: "150px" },
+          attrs: { type: "date", name: "date" },
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          staticStyle: { width: "150px" },
+          attrs: { type: "time", name: "time" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "control-label mt-3" }, [
+      _vm._v("\n        食事内容を入力してください（必須） "),
+      _c("a", { attrs: { href: "#", name: "help" } }, [_vm._v("ヘルプ")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("食事")]
+      ),
+      _vm._v(" "),
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("材料")]
+      ),
+      _vm._v(" "),
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("量")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "meal" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "ingredient" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "amount" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-5" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n        補足事項があれば入力してください（任意）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass: "form-control",
+        attrs: { name: "option", rows: "3" },
+      }),
     ])
   },
 ]
@@ -38874,18 +39241,32 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "upload" }, [
+  return _c("div", { staticClass: "container" }, [
     _c(
       "form",
-      { attrs: { action: "#", method: "post" } },
       [
-        _c("input", {
-          attrs: {
-            type: "file",
-            name: "picture",
-            value: "写真をアップロードしてください",
-          },
-        }),
+        _c("div", [
+          _c("label", [
+            _c(
+              "span",
+              { staticClass: "filelabel", attrs: { title: "ファイルを選択" } },
+              [
+                _c("img", {
+                  attrs: {
+                    src: _vm.uploadImg,
+                    width: "300",
+                    height: "300",
+                    alt: "＋画像",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              attrs: { type: "file", name: "picture", id: "filesend" },
+            }),
+          ]),
+        ]),
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),
@@ -38893,12 +39274,53 @@ var render = function () {
         _vm._v(" "),
         _vm._m(2),
         _vm._v(" "),
-        _vm._m(3),
+        _c("div", [
+          _vm._m(3),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-row" }, [
+            _vm._m(5),
+            _vm._v(" "),
+            _vm._m(6),
+            _vm._v(" "),
+            _vm._m(7),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "batsu",
+                on: {
+                  click: function ($event) {
+                    return _vm.deleteForm(_vm.index)
+                  },
+                },
+              },
+              [_vm._v("\n          ×\n        ")]
+            ),
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: " btn btn-secondary",
+              staticStyle: { width: "450px" },
+              on: {
+                click: function ($event) {
+                  return _vm.addForm()
+                },
+              },
+            },
+            [_vm._v("入力欄を追加")]
+          ),
+        ]),
         _vm._v(" "),
-        _vm._m(4),
+        _vm._m(8),
         _vm._v(" "),
         _c("router-link", { attrs: { to: { name: "index" } } }, [
           _c("input", {
+            staticClass: "mt-5 btn btn-secondary",
+            staticStyle: { width: "150px" },
             attrs: {
               type: "button",
               name: "submit",
@@ -38917,20 +39339,71 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("食事区分(必須)\n    "),
-      _c("select", { attrs: { name: "meal_time" } }, [
-        _c("option", { attrs: { hidden: "" } }, [_vm._v("選択してください")]),
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n      食事区分（必須）\n      "),
+      ]),
+      _vm._v(" "),
+      _c(
+        "select",
+        {
+          staticClass: "form-control",
+          staticStyle: { width: "200px" },
+          attrs: { name: "meal_time" },
+        },
+        [
+          _c("option", { attrs: { hidden: "" } }, [_vm._v("選択してください")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
+          _vm._v(" "),
+          _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n      場所（必須）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "200px" },
+        attrs: { type: "text", name: "place" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-3" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n        日時(必須）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row" }, [
+        _c("input", {
+          staticClass: "form-control",
+          staticStyle: { width: "150px" },
+          attrs: { type: "date", name: "date" },
+        }),
         _vm._v(" "),
-        _c("option", { attrs: { value: "1" } }, [_vm._v("朝食")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "2" } }, [_vm._v("昼食")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "3" } }, [_vm._v("間食")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "4" } }, [_vm._v("夕食")]),
-        _vm._v(" "),
-        _c("option", { attrs: { value: "5" } }, [_vm._v("夜食")]),
+        _c("input", {
+          staticClass: "form-control",
+          staticStyle: { width: "150px" },
+          attrs: { type: "time", name: "time" },
+        }),
       ]),
     ])
   },
@@ -38938,34 +39411,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("場所(必須)\n    "),
-      _c("input", { attrs: { type: "text", name: "place" } }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("日時(必須）\n    "),
-      _c("input", { attrs: { type: "date", name: "date" } }),
-      _vm._v("≈\n    "),
-      _c("input", { attrs: { type: "time", name: "time" } }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("食事内容を入力してください(必須)\n    "),
-      _c("input", { attrs: { type: "text", name: "meal" } }),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text", name: "ingredient" } }),
-      _vm._v(" "),
-      _c("input", { attrs: { type: "text", name: "amount" } }),
-      _vm._v(" "),
+    return _c("label", { staticClass: "control-label mt-3" }, [
+      _vm._v("\n        食事内容を入力してください（必須） "),
       _c("a", { attrs: { href: "#", name: "help" } }, [_vm._v("ヘルプ")]),
     ])
   },
@@ -38973,9 +39420,84 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("補足事項があれば入力してください(任意)\n    "),
-      _c("textarea", { attrs: { name: "option", rows: "3" } }),
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("食事")]
+      ),
+      _vm._v(" "),
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("材料")]
+      ),
+      _vm._v(" "),
+      _c(
+        "label",
+        {
+          staticClass: "control-label text-center",
+          staticStyle: { width: "150px" },
+        },
+        [_vm._v("量")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "meal" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "ingredient" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "form-control",
+        staticStyle: { width: "150px" },
+        attrs: { type: "text", name: "amount" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group mt-5" }, [
+      _c("label", { staticClass: "control-label" }, [
+        _vm._v("\n        補足事項があれば入力してください（任意）\n      "),
+      ]),
+      _vm._v(" "),
+      _c("textarea", {
+        staticClass: "form-control",
+        attrs: { name: "option", rows: "3" },
+      }),
     ])
   },
 ]
@@ -39161,8 +39683,8 @@ var render = function () {
         _c("router-link", { attrs: { to: { name: "complete" } } }, [
           _c("input", {
             staticClass: "mt-5 btn btn-secondary",
-            staticStyle: { width: "50px" },
-            attrs: { type: "submit", value: "登録する" },
+            staticStyle: { width: "150px" },
+            attrs: { type: "button", value: "登録する" },
           }),
         ]),
       ],
@@ -39193,12 +39715,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group form-inline" }, [
-      _c("label", { staticClass: "col-sm-3 control-label" }, [
+      _c("label", { staticClass: "col-sm-3 form-check-label" }, [
         _vm._v("\n        性別（必須）\n      "),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row radio-inline mx-2" }, [
         _c("input", {
+          staticClass: "form-check-input",
           attrs: {
             id: "man",
             type: "radio",
@@ -39212,6 +39735,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "row radio-inline mx-2" }, [
         _c("input", {
+          staticClass: "form-check-input",
           attrs: {
             id: "women",
             type: "radio",
@@ -55187,7 +55711,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RecordEditComponent_vue_vue_type_template_id_77f213b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RecordEditComponent.vue?vue&type=template&id=77f213b2& */ "./resources/js/components/RecordEditComponent.vue?vue&type=template&id=77f213b2&");
 /* harmony import */ var _RecordEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RecordEditComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/RecordEditComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RecordEditComponent.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -55195,7 +55721,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _RecordEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _RecordEditComponent_vue_vue_type_template_id_77f213b2___WEBPACK_IMPORTED_MODULE_0__["render"],
   _RecordEditComponent_vue_vue_type_template_id_77f213b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -55224,6 +55750,22 @@ component.options.__file = "resources/js/components/RecordEditComponent.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordEditComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordEditComponent.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordEditComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordEditComponent.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordEditComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 
@@ -55256,7 +55798,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RecordUploadComponent_vue_vue_type_template_id_00b37090___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RecordUploadComponent.vue?vue&type=template&id=00b37090& */ "./resources/js/components/RecordUploadComponent.vue?vue&type=template&id=00b37090&");
 /* harmony import */ var _RecordUploadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RecordUploadComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/RecordUploadComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RecordUploadComponent.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -55264,7 +55808,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _RecordUploadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _RecordUploadComponent_vue_vue_type_template_id_00b37090___WEBPACK_IMPORTED_MODULE_0__["render"],
   _RecordUploadComponent_vue_vue_type_template_id_00b37090___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -55293,6 +55837,22 @@ component.options.__file = "resources/js/components/RecordUploadComponent.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordUploadComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordUploadComponent.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./RecordUploadComponent.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/RecordUploadComponent.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_RecordUploadComponent_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 
