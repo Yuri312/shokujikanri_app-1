@@ -6796,7 +6796,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.batsu{\n    font-size: 300%;\n    font-weight: bold;\n}\n", ""]);
+exports.push([module.i, "\n.batsu{\n    font-size: 200%;\n    font-weight: bold;\n}\n", ""]);
 
 // exports
 
@@ -6815,7 +6815,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#filesend {\n   display: none;  /* 本来のファイル選択フォームは非表示に */\n}\n.batsu{\n    font-size: 300%;\n    font-weight: bold;\n}\n", ""]);
+exports.push([module.i, "\n#filesend {\n   display: none;  /* 本来のファイル選択フォームは非表示に */\n}\n.batsu{\n    font-size: 200%;\n    font-weight: bold;\n}\n", ""]);
 
 // exports
 
