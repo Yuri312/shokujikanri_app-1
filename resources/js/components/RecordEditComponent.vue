@@ -45,14 +45,14 @@
           <label class="control-label text-center" style="width:150px">量</label>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <input class="form-control" style="width:150px" type="text" name="meal">
+          <div class="form-group" v-for="(meal,index) in meals" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="meals[index]">
           </div>
-          <div class="form-group">
-            <input class="form-control" style="width:150px" type="text" name="ingredient">
+          <div class="form-group" v-for="(ingredient,index) in ingredients" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="ingredients[index]">
           </div>
-          <div class="form-group">
-            <input class="form-control" style="width:150px" type="text" name="amount">
+          <div class="form-group" v-for="(amount,index) in amounts" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="amounts[index]">
           </div>
           <div class="batsu" @click="deleteForm(index)">
             ×
@@ -80,7 +80,25 @@
 </template>
 <script>
 export default {
-  
+  data() {
+    return {
+      meals: [],
+      ingredients: [],
+      amounts: []
+    }
+  },
+  methods: {
+    addForm () {
+      this.meals.push('')
+      this.ingredients.push('')
+      this.amounts.push('')
+    },
+    deleteForm (index) {
+      this.meals.splice(index, 1)
+      this.ingredients.splice(index, 1)
+      this.amounts.splice(index, 1)
+    }
+  }
 }
 </script>
 <style>

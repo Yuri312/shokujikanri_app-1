@@ -4,7 +4,7 @@
       <div>
           <label>
             <span class="filelabel" title="ファイルを選択">
-              <img v-bind:src="uploadImg" width="300" height="300" alt="＋画像">
+              <img :src="'images/upload.jpg'" width="300" height="300" alt="＋画像">
             </span>
             <input type="file" name="picture" id="filesend">
           </label>
@@ -47,7 +47,8 @@
           <label class="control-label text-center" style="width:150px">材料</label>
           <label class="control-label text-center" style="width:150px">量</label>
         </div>
-        <div class="form-row">
+        
+        <!-- <div class="form-row">
           <div class="form-group">
             <input class="form-control" style="width:150px" type="text" name="meal">
           </div>
@@ -57,10 +58,25 @@
           <div class="form-group">
             <input class="form-control" style="width:150px" type="text" name="amount">
           </div>
+          <div class="batsu">
+            ×
+          </div>
+        </div> -->
+        <div class="form-row">
+          <div class="form-group" v-for="(meal,index) in meals" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="meals[index]">
+          </div>
+          <div class="form-group" v-for="(ingredient,index) in ingredients" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="ingredients[index]">
+          </div>
+          <div class="form-group" v-for="(amount,index) in amounts" :key="index">
+            <input class="form-control" style="width:150px" type="text" v-model="amounts[index]">
+          </div>
           <div class="batsu" @click="deleteForm(index)">
             ×
           </div>
         </div>
+
         <button class=" btn btn-secondary" style="width:450px" @click="addForm()">入力欄を追加</button>
       </div>
 
@@ -80,16 +96,21 @@
 export default {
   data() {
     return {
-      uploadImg:　upload.img,
-      forms: []
+      meals: [],
+      ingredients: [],
+      amounts: []
     }
   },
   methods: {
     addForm () {
-      this.forms.push('')
+      this.meals.push('')
+      this.ingredients.push('')
+      this.amounts.push('')
     },
     deleteForm (index) {
-      this.forms.splice(index, 1)
+      this.meals.splice(index, 1)
+      this.ingredients.splice(index, 1)
+      this.amounts.splice(index, 1)
     }
   }
 }

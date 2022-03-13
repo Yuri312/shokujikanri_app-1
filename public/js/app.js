@@ -2090,7 +2090,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      meals: [],
+      ingredients: [],
+      amounts: []
+    };
+  },
+  methods: {
+    addForm: function addForm() {
+      this.meals.push('');
+      this.ingredients.push('');
+      this.amounts.push('');
+    },
+    deleteForm: function deleteForm(index) {
+      this.meals.splice(index, 1);
+      this.ingredients.splice(index, 1);
+      this.amounts.splice(index, 1);
+    }
+  }
+});
 
 /***/ }),
 
@@ -2181,19 +2201,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      uploadImg: upload.img,
-      forms: []
+      meals: [],
+      ingredients: [],
+      amounts: []
     };
   },
   methods: {
     addForm: function addForm() {
-      this.forms.push('');
+      this.meals.push('');
+      this.ingredients.push('');
+      this.amounts.push('');
     },
     deleteForm: function deleteForm(index) {
-      this.forms.splice(index, 1);
+      this.meals.splice(index, 1);
+      this.ingredients.splice(index, 1);
+      this.amounts.splice(index, 1);
     }
   }
 });
@@ -38985,26 +39026,106 @@ var render = function () {
         _vm._v(" "),
         _vm._m(4),
         _vm._v(" "),
-        _c("div", { staticClass: "form-row" }, [
-          _vm._m(5),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "batsu",
-              on: {
-                click: function ($event) {
-                  return _vm.deleteForm(_vm.index)
+        _c(
+          "div",
+          { staticClass: "form-row" },
+          [
+            _vm._l(_vm.meals, function (meal, index) {
+              return _c("div", { key: index, staticClass: "form-group" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.meals[index],
+                      expression: "meals[index]",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  staticStyle: { width: "150px" },
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.meals[index] },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.meals, index, $event.target.value)
+                    },
+                  },
+                }),
+              ])
+            }),
+            _vm._v(" "),
+            _vm._l(_vm.ingredients, function (ingredient, index) {
+              return _c("div", { key: index, staticClass: "form-group" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.ingredients[index],
+                      expression: "ingredients[index]",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  staticStyle: { width: "150px" },
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.ingredients[index] },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.ingredients, index, $event.target.value)
+                    },
+                  },
+                }),
+              ])
+            }),
+            _vm._v(" "),
+            _vm._l(_vm.amounts, function (amount, index) {
+              return _c("div", { key: index, staticClass: "form-group" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.amounts[index],
+                      expression: "amounts[index]",
+                    },
+                  ],
+                  staticClass: "form-control",
+                  staticStyle: { width: "150px" },
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.amounts[index] },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.amounts, index, $event.target.value)
+                    },
+                  },
+                }),
+              ])
+            }),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "batsu",
+                on: {
+                  click: function ($event) {
+                    return _vm.deleteForm(_vm.index)
+                  },
                 },
               },
-            },
-            [_vm._v("\n          ×\n        ")]
-          ),
-        ]),
+              [_vm._v("\n          ×\n        ")]
+            ),
+          ],
+          2
+        ),
         _vm._v(" "),
         _c(
           "button",
@@ -39021,7 +39142,7 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _vm._m(8),
+      _vm._m(5),
       _vm._v(" "),
       _c(
         "div",
@@ -39172,42 +39293,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "meal" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "ingredient" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "amount" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "form-group mt-5" }, [
       _c("label", { staticClass: "control-label" }, [
         _vm._v("\n        補足事項があれば入力してください（任意）\n      "),
@@ -39253,7 +39338,7 @@ var render = function () {
               [
                 _c("img", {
                   attrs: {
-                    src: _vm.uploadImg,
+                    src: "images/upload.jpg",
                     width: "300",
                     height: "300",
                     alt: "＋画像",
@@ -39279,26 +39364,106 @@ var render = function () {
           _vm._v(" "),
           _vm._m(4),
           _vm._v(" "),
-          _c("div", { staticClass: "form-row" }, [
-            _vm._m(5),
-            _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "batsu",
-                on: {
-                  click: function ($event) {
-                    return _vm.deleteForm(_vm.index)
+          _c(
+            "div",
+            { staticClass: "form-row" },
+            [
+              _vm._l(_vm.meals, function (meal, index) {
+                return _c("div", { key: index, staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.meals[index],
+                        expression: "meals[index]",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    staticStyle: { width: "150px" },
+                    attrs: { type: "text" },
+                    domProps: { value: _vm.meals[index] },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.meals, index, $event.target.value)
+                      },
+                    },
+                  }),
+                ])
+              }),
+              _vm._v(" "),
+              _vm._l(_vm.ingredients, function (ingredient, index) {
+                return _c("div", { key: index, staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.ingredients[index],
+                        expression: "ingredients[index]",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    staticStyle: { width: "150px" },
+                    attrs: { type: "text" },
+                    domProps: { value: _vm.ingredients[index] },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.ingredients, index, $event.target.value)
+                      },
+                    },
+                  }),
+                ])
+              }),
+              _vm._v(" "),
+              _vm._l(_vm.amounts, function (amount, index) {
+                return _c("div", { key: index, staticClass: "form-group" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.amounts[index],
+                        expression: "amounts[index]",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    staticStyle: { width: "150px" },
+                    attrs: { type: "text" },
+                    domProps: { value: _vm.amounts[index] },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(_vm.amounts, index, $event.target.value)
+                      },
+                    },
+                  }),
+                ])
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "batsu",
+                  on: {
+                    click: function ($event) {
+                      return _vm.deleteForm(_vm.index)
+                    },
                   },
                 },
-              },
-              [_vm._v("\n          ×\n        ")]
-            ),
-          ]),
+                [_vm._v("\n          ×\n        ")]
+              ),
+            ],
+            2
+          ),
           _vm._v(" "),
           _c(
             "button",
@@ -39315,7 +39480,7 @@ var render = function () {
           ),
         ]),
         _vm._v(" "),
-        _vm._m(8),
+        _vm._m(5),
         _vm._v(" "),
         _c("router-link", { attrs: { to: { name: "index" } } }, [
           _c("input", {
@@ -39447,42 +39612,6 @@ var staticRenderFns = [
         },
         [_vm._v("量")]
       ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "meal" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "ingredient" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("input", {
-        staticClass: "form-control",
-        staticStyle: { width: "150px" },
-        attrs: { type: "text", name: "amount" },
-      }),
     ])
   },
   function () {
