@@ -14,6 +14,7 @@ import UserCompleteComponent from "./components/UserCompleteComponent";
 import UserIndexComponent from "./components/UserIndexComponent";
 import RecordEditComponent from "./components/RecordEditComponent";
 import RecordUploadComponent from "./components/RecordUploadComponent";
+import modal from '/components/parts/modal'
 
 
 window.Vue = require('vue');
@@ -70,7 +71,7 @@ const router = new VueRouter({
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('header-component', HeaderComponent);
 Vue.component('login-component', LoginComponent);
-
+Vue.component('modal', modal)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -1954,7 +1954,48 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: {
+    showContent: false
+  },
+  methods: {
+    openModal: function openModal() {
+      this.showContent = true;
+    },
+    closeModal: function closeModal() {
+      this.showContent = false;
+    }
+  }
+});
 
 /***/ }),
 
@@ -38864,21 +38905,137 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container-fluid bg-white" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("nav", { staticClass: "navbar navbar-light" }, [
+        _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
+          _vm._v("食事記録"),
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn",
+            attrs: { type: "button" },
+            on: { click: _vm.openModal },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "images/logout.jpg",
+                width: "40",
+                alt: "ログアウト",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showContent,
+                expression: "showContent",
+              },
+            ],
+            attrs: { id: "overlay" },
+          },
+          [
+            _c("div", { attrs: { id: "content" } }, [
+              _c("p", [_vm._v("これがモーダルウィンドウです。")]),
+              _vm._v(" "),
+              _c("button", { on: { click: _vm.closeModal } }, [
+                _vm._v("Close"),
+              ]),
+            ]),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "modal fade",
+            attrs: {
+              id: "logoutModal",
+              tabindex: "-1",
+              "aria-labelledby": "logoutModalLabel",
+              "aria-hidden": "true",
+            },
+          },
+          [
+            _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body text-center" }, [
+                  _c(
+                    "div",
+                    { staticClass: "row mt-5" },
+                    [
+                      _c("router-link", { attrs: { to: { name: "login" } } }, [
+                        _c("input", {
+                          staticClass: "btn btn-secondary btn-close",
+                          staticStyle: { width: "100px" },
+                          attrs: { type: "button", value: "戻る" },
+                        }),
+                      ]),
+                      _vm._v(" "),
+                      _c("router-link", { attrs: { to: { name: "login" } } }, [
+                        _c("input", {
+                          staticClass: "btn btn-secondary",
+                          staticStyle: { width: "100px" },
+                          attrs: { type: "button", value: "はい" },
+                        }),
+                      ]),
+                    ],
+                    1
+                  ),
+                ]),
+                _vm._v(" "),
+                _vm._m(1),
+              ]),
+            ]),
+          ]
+        ),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-fluid bg-white" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("nav", { staticClass: "navbar navbar-light" }, [
-          _c("span", { staticClass: "navbar-brand mb-0 h1" }, [
-            _vm._v("食事記録"),
-          ]),
-        ]),
-      ]),
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "logoutModalLabel" } },
+        [_vm._v("ログアウトしますか？")]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-secondary",
+          attrs: { type: "button", "data-bs-dismiss": "modal" },
+        },
+        [_vm._v("Close")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "button" } },
+        [_vm._v("OK")]
+      ),
     ])
   },
 ]
@@ -39330,28 +39487,34 @@ var render = function () {
     _c(
       "form",
       [
-        _c("div", [
-          _c("label", [
-            _c(
-              "span",
-              { staticClass: "filelabel", attrs: { title: "ファイルを選択" } },
-              [
-                _c("img", {
-                  attrs: {
-                    src: "images/upload.jpg",
-                    width: "300",
-                    height: "300",
-                    alt: "＋画像",
-                  },
-                }),
-              ]
-            ),
-            _vm._v(" "),
-            _c("input", {
-              attrs: { type: "file", name: "picture", id: "filesend" },
-            }),
-          ]),
-        ]),
+        _c(
+          "div",
+          {
+            staticClass: "py-5",
+            staticStyle: { "background-color": "#f5f5f5, width:500" },
+          },
+          [
+            _c("label", [
+              _c(
+                "span",
+                { staticClass: "mx-auto", attrs: { title: "ファイルを選択" } },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "images/upload.jpg",
+                      width: "450",
+                      alt: "写真をアップロード",
+                    },
+                  }),
+                ]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                attrs: { type: "file", name: "picture", id: "filesend" },
+              }),
+            ]),
+          ]
+        ),
         _vm._v(" "),
         _vm._m(0),
         _vm._v(" "),

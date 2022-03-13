@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <form>
-      <div>
+      <div class="py-5" style="background-color:#f5f5f5, width:500">
           <label>
-            <span class="filelabel" title="ファイルを選択">
-              <img :src="'images/upload.jpg'" width="300" height="300" alt="＋画像">
+            <span class="mx-auto" title="ファイルを選択">
+              <img :src="'images/upload.jpg'" width="450" alt="写真をアップロード">
             </span>
             <input type="file" name="picture" id="filesend">
           </label>
