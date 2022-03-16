@@ -26,6 +26,7 @@
     "dependencies": {
         "@fortawesome/vue-fontawesome": "^2.0.6",
         "bootstrap-vue": "^2.21.2",
+        "micromodal": "^0.4.10",
         "vue-awesome": "^4.5.0",
         "vue-router": "^3.2.*"
     }

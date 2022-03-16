@@ -1974,25 +1974,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: {
-    showContent: false
-  },
+  data: {},
   methods: {
-    openModal: function openModal() {
-      this.showContent = true;
-    },
-    closeModal: function closeModal() {
-      this.showContent = false;
+    openModal: function openModal(e) {
+      $('#modal').modal('show');
     }
   }
 });
@@ -2131,6 +2117,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2149,6 +2166,12 @@ __webpack_require__.r(__webpack_exports__);
       this.meals.splice(index, 1);
       this.ingredients.splice(index, 1);
       this.amounts.splice(index, 1);
+    },
+    deletePictureForm: function deletePictureForm(e) {
+      $('#deletePictureModal').modal('show');
+    },
+    deleteRecordForm: function deleteRecordForm(e) {
+      $('#deleteRecordModal').modal('show');
     }
   }
 });
@@ -38930,115 +38953,56 @@ var render = function () {
           ]
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showContent,
-                expression: "showContent",
-              },
-            ],
-            attrs: { id: "overlay" },
-          },
-          [
-            _c("div", { attrs: { id: "content" } }, [
-              _c("p", [_vm._v("これがモーダルウィンドウです。")]),
-              _vm._v(" "),
-              _c("button", { on: { click: _vm.closeModal } }, [
-                _vm._v("Close"),
+        _c("div", { staticClass: "modal fade", attrs: { id: "modal" } }, [
+          _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-body text-center" }, [
+                _c(
+                  "h5",
+                  {
+                    staticClass: "modal-title",
+                    attrs: { id: "logoutModalLabel" },
+                  },
+                  [_vm._v("ログアウトしてよろしいですか？")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "row justify-content-around mt-5" },
+                  [
+                    _c("input", {
+                      staticClass: "btn btn-secondary",
+                      staticStyle: { width: "100px" },
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        value: "戻る",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("router-link", { attrs: { to: { name: "login" } } }, [
+                      _c("input", {
+                        staticClass: "btn btn-secondary",
+                        staticStyle: { width: "100px" },
+                        attrs: {
+                          type: "button",
+                          "data-dismiss": "modal",
+                          value: "はい",
+                        },
+                      }),
+                    ]),
+                  ],
+                  1
+                ),
               ]),
             ]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "modal fade",
-            attrs: {
-              id: "logoutModal",
-              tabindex: "-1",
-              "aria-labelledby": "logoutModalLabel",
-              "aria-hidden": "true",
-            },
-          },
-          [
-            _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
-              _c("div", { staticClass: "modal-content" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body text-center" }, [
-                  _c(
-                    "div",
-                    { staticClass: "row mt-5" },
-                    [
-                      _c("router-link", { attrs: { to: { name: "login" } } }, [
-                        _c("input", {
-                          staticClass: "btn btn-secondary btn-close",
-                          staticStyle: { width: "100px" },
-                          attrs: { type: "button", value: "戻る" },
-                        }),
-                      ]),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: { name: "login" } } }, [
-                        _c("input", {
-                          staticClass: "btn btn-secondary",
-                          staticStyle: { width: "100px" },
-                          attrs: { type: "button", value: "はい" },
-                        }),
-                      ]),
-                    ],
-                    1
-                  ),
-                ]),
-                _vm._v(" "),
-                _vm._m(1),
-              ]),
-            ]),
-          ]
-        ),
+          ]),
+        ]),
       ]),
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h5",
-        { staticClass: "modal-title", attrs: { id: "logoutModalLabel" } },
-        [_vm._v("ログアウトしますか？")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-footer" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-secondary",
-          attrs: { type: "button", "data-bs-dismiss": "modal" },
-        },
-        [_vm._v("Close")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("OK")]
-      ),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39169,7 +39133,20 @@ var render = function () {
   return _c("div", { staticClass: "container" }, [
     _c("form", [
       _c("div", { staticStyle: { "background-color": "#f5f5f5" } }, [
-        _vm._v("\n    画像一覧が表示される予定\n  "),
+        _vm._v("\n    画像一覧が表示される予定\n    "),
+        _c(
+          "button",
+          {
+            staticClass: "btn",
+            attrs: { type: "button" },
+            on: {
+              click: function ($event) {
+                return _vm.deletePictureForm()
+              },
+            },
+          },
+          [_vm._v("\n      写真を削除する\n    ")]
+        ),
       ]),
       _vm._v(" "),
       _vm._m(0),
@@ -39305,13 +39282,16 @@ var render = function () {
         "div",
         { staticClass: "row mt-5" },
         [
-          _c("router-link", { attrs: { to: { name: "index" } } }, [
-            _c("input", {
-              staticClass: "btn btn-light border",
-              staticStyle: { width: "200px" },
-              attrs: { type: "button", name: "delete", value: "削除する" },
-            }),
-          ]),
+          _c("input", {
+            staticClass: "btn btn-light border",
+            staticStyle: { width: "200px" },
+            attrs: { type: "button", name: "delete", value: "削除する" },
+            on: {
+              click: function ($event) {
+                return _vm.deleteRecordForm()
+              },
+            },
+          }),
           _vm._v(" "),
           _c("router-link", { attrs: { to: { name: "index" } } }, [
             _c("input", {
@@ -39329,6 +39309,58 @@ var render = function () {
         1
       ),
     ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "modal fade", attrs: { id: "deleteRecordModal" } },
+      [
+        _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-body text-center" }, [
+              _c(
+                "h5",
+                {
+                  staticClass: "modal-title",
+                  attrs: { id: "logoutModalLabel" },
+                },
+                [_vm._v("登録を削除してしてよろしいですか？")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "row justify-content-around mt-5" },
+                [
+                  _c("input", {
+                    staticClass: "btn btn-secondary",
+                    staticStyle: { width: "100px" },
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      value: "戻る",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c("router-link", { attrs: { to: { name: "index" } } }, [
+                    _c("input", {
+                      staticClass: "btn btn-secondary",
+                      staticStyle: { width: "100px" },
+                      attrs: {
+                        type: "button",
+                        "data-dismiss": "modal",
+                        value: "削除する",
+                      },
+                    }),
+                  ]),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ]),
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(6),
   ])
 }
 var staticRenderFns = [
@@ -39461,6 +39493,53 @@ var staticRenderFns = [
       }),
     ])
   },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "modal fade", attrs: { id: "deletePictureModal" } },
+      [
+        _c("div", { staticClass: "modal-dialog modal-dialog-centered" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-body text-center" }, [
+              _c(
+                "h5",
+                {
+                  staticClass: "modal-title",
+                  attrs: { id: "logoutModalLabel" },
+                },
+                [_vm._v("写真削除してしてよろしいですか？")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "row justify-content-around mt-5" }, [
+                _c("input", {
+                  staticClass: "btn btn-secondary",
+                  staticStyle: { width: "100px" },
+                  attrs: {
+                    type: "button",
+                    "data-dismiss": "modal",
+                    value: "戻る",
+                  },
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "btn btn-secondary",
+                  staticStyle: { width: "100px" },
+                  attrs: {
+                    type: "button",
+                    "data-dismiss": "modal",
+                    value: "削除する",
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+        ]),
+      ]
+    )
+  },
 ]
 render._withStripped = true
 
@@ -39490,7 +39569,7 @@ var render = function () {
         _c(
           "div",
           {
-            staticClass: "py-5",
+            staticClass: "py-5 text-center",
             staticStyle: { "background-color": "#f5f5f5, width:500" },
           },
           [

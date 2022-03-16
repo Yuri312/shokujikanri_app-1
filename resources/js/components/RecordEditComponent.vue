@@ -5,6 +5,9 @@
 
     <div style="background-color:#f5f5f5">
       画像一覧が表示される予定
+      <button type="button" class="btn" @click="deletePictureForm()">
+        写真を削除する
+      </button>
     </div>
     <div class="form-group mt-3">
         <label class="control-label">
@@ -67,15 +70,43 @@
           <textarea class="form-control" name="option" rows="3"></textarea>
       </div>
       <div class="row mt-5">
-        <router-link v-bind:to="{name: 'index'}">
-          <input type="button" class="btn btn-light border" style="width:200px" name="delete" value="削除する">
-        </router-link>
+          <input type="button" class="btn btn-light border" style="width:200px" name="delete" @click="deleteRecordForm()" value="削除する">
         <router-link v-bind:to="{name: 'index'}">
           <input type="button" class="btn btn-secondary" style="width:200px" name="update" id="post" value="登録する">
         </router-link>
       </div>
   </form>
-  
+
+  <div class="modal fade" id="deleteRecordModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body text-center">
+            <h5 class="modal-title" id="logoutModalLabel">登録を削除してよろしいですか？</h5>
+            <div class="row justify-content-around mt-5">
+                <input type="button" class="btn btn-secondary" style="width:100px" data-dismiss="modal" value="戻る">
+                <router-link v-bind:to="{name: 'index'}">
+                <input type="button" class="btn btn-secondary" style="width:100px" data-dismiss="modal" value="削除する">
+                </router-link>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="deletePictureModal">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          <div class="modal-body text-center">
+              <h5 class="modal-title" id="logoutModalLabel">写真削除してよろしいですか？</h5>
+              <div class="row justify-content-around mt-5">
+                  <input type="button" class="btn btn-secondary" style="width:100px" data-dismiss="modal" value="戻る">
+                  <input type="button" class="btn btn-secondary" style="width:100px" data-dismiss="modal" value="削除する">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </template>
 <script>
@@ -97,7 +128,13 @@ export default {
       this.meals.splice(index, 1)
       this.ingredients.splice(index, 1)
       this.amounts.splice(index, 1)
-    }
+    },
+    deletePictureForm(e) {
+      $('#deletePictureModal').modal('show');
+    },
+    deleteRecordForm(e) {
+      $('#deleteRecordModal').modal('show');
+    },
   }
 }
 </script>

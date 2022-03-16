@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <form>
-      <div class="py-5" style="background-color:#f5f5f5, width:500">
+      <div class="py-5 text-center" style="background-color:#f5f5f5, width:500">
           <label>
             <span class="mx-auto" title="ファイルを選択">
               <img :src="'images/upload.jpg'" width="450" alt="写真をアップロード">
