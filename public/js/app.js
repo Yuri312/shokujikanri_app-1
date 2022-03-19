@@ -6882,7 +6882,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nbody{\n  background-color: #e5e5e5;\n}\n.login-block{\n  width: 300px;\n}\n\n", ""]);
+exports.push([module.i, "\n.title-screen{\n  height:100vh;\n  min-height:100vh;\n  background-color: #e5e5e5;\n}\n.login-block{\n  width: 300px;\n}\n\n", ""]);
 
 // exports
 
@@ -39024,9 +39024,9 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "container-fluid  title-screen" }, [
     _c("form", { attrs: { action: "", method: "post" } }, [
-      _c("div", { staticClass: "form-group text-center" }, [
+      _c("div", { staticClass: "py-5 form-group text-center" }, [
         _c("div", { staticClass: "h2 my-3" }, [
           _vm._v("\n        ログイン\n      "),
         ]),
@@ -39323,7 +39323,7 @@ var render = function () {
                   staticClass: "modal-title",
                   attrs: { id: "logoutModalLabel" },
                 },
-                [_vm._v("登録を削除してしてよろしいですか？")]
+                [_vm._v("登録を削除してよろしいですか？")]
               ),
               _vm._v(" "),
               _c(
@@ -39510,7 +39510,7 @@ var staticRenderFns = [
                   staticClass: "modal-title",
                   attrs: { id: "logoutModalLabel" },
                 },
-                [_vm._v("写真削除してしてよろしいですか？")]
+                [_vm._v("写真削除してよろしいですか？")]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "row justify-content-around mt-5" }, [

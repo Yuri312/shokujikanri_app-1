@@ -1,8 +1,8 @@
 <template>
   
-  <div class="container">
+  <div class="container-fluid  title-screen">
     <form action="" method="post">
-      <div class="form-group text-center">
+      <div class="py-5 form-group text-center">
         <div class="h2 my-3">
           ログイン
         </div>
@@ -35,9 +35,13 @@ export default {
 </script>
 
 <style>
-body{
+
+.title-screen{
+  height:100vh;
+  min-height:100vh;
   background-color: #e5e5e5;
 }
+
 .login-block{
   width: 300px;
 }
