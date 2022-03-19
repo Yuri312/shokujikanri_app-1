@@ -14,21 +14,22 @@ class UserInfoTable extends Migration
     public function up()
     {
         Schema::create('user_info',function(Blueprint $table) {
-            $table->increment('user_id');
-            $table->string('user_name');
-            $table->string('email');
-            $table->string('password');
-            $table->boolean('sex_type');
-            $table->integer('height');
-            $table->integer('weight');
-            $table->integer('fat_percentage');
-            $table->string('sport_name');
-            $table->string('sport_position');
-            $table->integer('auth_type'); // 1:回答者,2:研究者,3:管理者
-            $table->dateTime('register_date');
-            $table->integer('register_user_id');
-            $table->dateTime('update_date');
-            $table->integer('update_user_id');
+            $table->increments('user_id')->comment('ユーザーID');
+            $table->string('user_name')->comment('名前');
+            $table->string('email')->comment('メールアドレス');
+            $table->string('password')->comment('パスワード');
+            $table->rememberToken();
+            $table->boolean('sex_type')->comment('性別');
+            $table->integer('height')->comment('身長');
+            $table->integer('weight')->comment('体重');
+            $table->integer('fat_percentage')->comment('体脂肪率');
+            $table->string('sport_name')->comment('競技名');
+            $table->string('sport_position')->comment('ポジション');
+            $table->integer('auth_type')->comment('権限区分'); // 1:回答者,2:研究者,3:管理者
+            $table->timestamp('register_date')->comment('登録日時');
+            $table->integer('register_user_id')->comment('登録ユーザーID');
+            $table->timestamp('update_date')->comment('更新日時');
+            $table->integer('update_user_id')->comment('更新ユーザーID');
         });
     }
 

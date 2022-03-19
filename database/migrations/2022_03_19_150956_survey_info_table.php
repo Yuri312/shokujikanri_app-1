@@ -14,17 +14,17 @@ class SurveyInfoTable extends Migration
     public function up()
     {
         Schema::create('survey_info',function(Blueprint $table) {
-            $table->integer('survey_id')->unique();
-            $table->string('survey_name');
+            $table->increments('survey_id')->comment('調査ID');
+            $table->string('survey_name')->comment('調査名');
             //メモ：調査対象期間と年代ってテキストであってる？
-            $table->string('term');
-            $table->string('era');
-            $table->string('sex');
-            $table->string('sport');
-            $table->dateTime('register_date');
-            $table->integer('register_user_id');
-            $table->dateTime('update_date');
-            $table->integer('update_user_id');
+            $table->string('term')->comment('調査対象期間');
+            $table->string('era')->comment('年代');
+            $table->string('sex')->comment('性別');
+            $table->string('sport')->comment('競技');
+            $table->timestamp('register_date')->comment('登録日時');
+            $table->integer('register_user_id')->comment('登録ユーザーID');
+            $table->timestamp('update_date')->comment('更新日時');
+            $table->integer('update_user_id')->comment('更新ユーザーID');
         });
     }
 

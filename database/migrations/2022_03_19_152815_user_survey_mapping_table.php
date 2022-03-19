@@ -14,13 +14,13 @@ class UserSurveyMappingTable extends Migration
     public function up()
     {
         Schema::create('user_survey_mapping',function(Blueprint $table) {
-            $table->integer('u_p_map_id')->unique();
-            $table->integer('user_id')->unique();
-            $table->integer('survey_id')->unique();
-            $table->dateTime('register_date');
-            $table->integer('register_user_id');
-            $table->dateTime('update_date');
-            $table->integer('update_user_id');
+            $table->increments('u_p_map_id')->comment('ユーザー調査マッピングID');
+            $table->integer('user_id')->unique()->comment('ユーザーID');
+            $table->integer('survey_id')->unique()->comment('調査ID');
+            $table->timestamp('register_date')->comment('登録日時');
+            $table->integer('register_user_id')->comment('登録ユーザーID');
+            $table->timestamp('update_date')->comment('更新日時');
+            $table->integer('update_user_id')->comment('更新ユーザーID');
         });
     }
 
